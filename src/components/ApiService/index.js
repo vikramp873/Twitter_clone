@@ -9,7 +9,7 @@ let axiosConfig = {
 
 
 export function getData() {
-   const url = 'http://www.mocky.io/v2/5d1ef97d310000552febe99d';
+   const url = 'https://www.mocky.io/v2/5d1ef97d310000552febe99d';
    return axios.get(url, axiosConfig).then(res => res.data).catch((error) => {
       if (error.response) {
          return error.response; // => the response payload 
